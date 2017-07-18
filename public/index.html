@@ -1,0 +1,27 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>chat</title>
+    <script src="socket.io.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.0.min.js" charset="utf-8"></script>
+    <script src="main.js" charset="utf-8"></script>
+    <!-- Здесь можете подключить ваш main.css -->
+</head>
+<body>
+<div id="loginDiv">
+    <label>Введите своё имя:</label>
+    <input id="loginInput" type="text" size="20">
+    <button type="button" name="setName" id="loginButton">Войти в чат</button>
+</div>
+
+
+<div style="display:none" id="chatDiv">
+    <textarea name="name" id="textarea" rows="8" cols="40" disabled></textarea>
+    <p></p>
+    <input type="text" id="input" size="20">
+    <button type="button" name="button" id="send">Отправить</button>
+    <div id="error" style="text-align:center;width:150px;color:red"></div>
+</div>
+
+</body>
+</html>
